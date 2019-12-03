@@ -1,0 +1,18 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      
+server:
+  port: 8081
+  
+eureka:
+  client:
+    enabled: true
+    registry-fetch-interval-seconds: 10
+    instance-info-replication-interval-seconds: 10
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+    
+premium-email-suffix: gmail.com
