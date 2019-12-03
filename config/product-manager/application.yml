@@ -1,0 +1,22 @@
+
+server:
+  port: 8082
+  
+spring:
+  h2:
+    console:
+      enabled: true
+    
+eureka:
+  client:
+    enabled: true
+    registry-fetch-interval-seconds: 10
+    instance-info-replication-interval-seconds: 10
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+    
+ products:
+  exclusives:
+  - "Assistance"
+  - "24hService"
